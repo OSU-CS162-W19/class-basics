@@ -22,5 +22,11 @@ int main(int argc, char const *argv[]) {
   p2.translate(-5, -5);
   std::cout << "p2: (" << p2.get_x() << ", " << p2.get_y() << ")" << std::endl;
 
+  Point p3(8, 16);
+  std::cout << "p3: (" << p3.get_x() << ", " << p3.get_y() << ")" << std::endl;
+
+  Point p4;
+  std::cout << "p4: (" << p4.get_x() << ", " << p4.get_y() << ")" << std::endl;
+
   return 0;
 }

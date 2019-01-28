@@ -11,6 +11,8 @@ private:
 public:
   Student();
   Student(std::string name, int id);
+  Student(const Student& s);
+  ~Student();
 
   void add_grade(float grade);
   void print_student();

@@ -9,5 +9,9 @@ int main(int argc, char const *argv[]) {
   s1.add_grade(3.67);
   s1.print_student();
 
+  Student s2 = s1;
+  s2.add_grade(0.67);
+  s2.print_student();
+
   return 0;
 }

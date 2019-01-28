@@ -1,5 +1,9 @@
 #include "point.hpp"
 
+Point::Point() : x(-1), y(-1) {}
+
+Point::Point(int x, int y) : x(x), y(y) {}
+
 void Point::translate(int dx, int dy) {
   this->x += dx;
   this->y += dy;

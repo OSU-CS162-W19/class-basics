@@ -7,6 +7,8 @@ private:
   int y;
 
 public:
+  Point();
+  Point(int x, int y);
   void translate(int dx, int dy);
   void set_x(int x);
   void set_y(int y);
