@@ -43,6 +43,19 @@ Student::~Student() {
   delete[] this->grades;
 }
 
+void Student::operator=(const Student& rhs) {
+  std::cout << "== Assignment operator called for student " << rhs.id
+    << std::endl;
+  // delete[] this->grades;
+  // this->grades = new float[MAX_GRADES];
+  this->name = rhs.name;
+  this->id = rhs.id;
+  this->n_grades = rhs.n_grades;
+  for (int i = 0; i < rhs.n_grades; i++) {
+    this->grades[i] = rhs.grades[i];
+  }
+}
+
 /*
  * This is the definition of our method to add a new grade to a Student objecy.
  * It checks to make sure the Student still has space in its grades array.

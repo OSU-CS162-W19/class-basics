@@ -14,6 +14,8 @@ public:
   Student(const Student& s);
   ~Student();
 
+  void operator=(const Student& rhs);
+
   void add_grade(float grade);
   void print_student();
 };
