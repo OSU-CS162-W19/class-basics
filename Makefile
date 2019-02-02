@@ -3,7 +3,7 @@
 
 CC=g++ -g
 
-# all: student_stuff point_stuff
+all: student_stuff point_stuff
 
 student_stuff: student_stuff.cpp student.hpp student.o
 	$(CC) student_stuff.cpp student.o -o student_stuff
